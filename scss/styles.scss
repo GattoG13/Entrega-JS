@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+$main-color: #8aaae5;
+$secondary-color: white;
+
+body {
+  background-image: url('../multimedia/images/fondodef.jpg');
+  background-repeat: repeat;
+}
+
+.navbar {
+  background-color: $main-color;
+  border: solid black 1.5px;
+  border-radius: 1px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-item {
+  transition: all 1.3s;
+  z-index: 1;
+
+  &:hover {
+    margin-left: 0.7rem;
+    color: black;
+  }
+}
+
+.dropdown-item {
+  transition: all 1.3s;
+
+  &:hover {
+    margin-left: 1rem;
+  }
+}
+
+.nav-item1 {
+  transition: all 2s;
+
+  &:hover {
+    margin-left: 0.3rem;
+  }
+}
+
+.navbar-brand {
+  transition: all 1.3s;
+
+  &:hover {
+    transform: scale(1.2);
+    padding-left: 1rem;
+  }
+}
+
+.introtext1 {
+  padding-top: 4rem;
+}
+
+.carousel {
+  z-index: 0;
+  display: block;
+  margin: 0 3rem;
+}
+
+.carrusel1 {
+  padding-top: 2rem;
+}
+
+.senseih2 {
+  padding-top: 2rem;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+.lavilla-pharagraph-intro {
+  padding-top: 50px;
+}
+
+.comentario-index1 {
+  margin: 20px;
+}
+
+.comentario-index2 {
+  margin: 20px;
+}
+
+.comentario-index3 {
+  margin: 20px;
+}
+
+.imgcom1-index {
+  width: 50%;
+}
+
+.logo-container {
+  a {
+    img {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+}
+
+.logoinst {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+
+.logo-redes {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.pharagraph-contact {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.subtitleh1-villa {
+  font-size: 30px;
+  font-style: italic;
+  padding-top: 1rem;
+
+  &:hover {
+    transform: translateX(0.5rem);
+    transition: all 1.5s;
+  }
+}
+
+.pharagraph-villaserrana-intro {
+  padding: 20px;
+}
+
+.imgslavilla-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(6, auto);
+  gap: 10px;
+  margin: 10px;
+}
+
+.imgs-lavilla {
+  width: 100%;
+  height: 100%;
+}
+
+.interestpoints {
+  transition: all 1.3s;
+
+  &:hover {
+    padding-left: 2rem;
+    transform: scale(1rem) translateX(80px);
+  }
+}
+
+h2 {
+  padding-left: 10px;
+  margin: 5px;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.interestimgs1-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(1, auto);
+  gap: 5px;
+}
+
+.ventorrillo-text1 {
+  padding: 10px;
+}
+
+.ventorrillo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.interestimgs2-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(1, auto);
+  gap: 5px;
+}
+
+.represa-img {
+  width: 100%;
+  height: 100%;
+}
+
+.h2nos {
+  padding-top: 6rem;
+}
+
+.imagen-nosotros1 {
+  display: flex;
+}
+
+.box div {
+  display: flex;
+  width: 40%;
+  padding-top: 1rem;
+}
+
+.box1 {
+  display: flex;
+  width: 40%;
+  padding-top: 1rem;
+}
+
+.map {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  width: 35%;
+  height: 40;
+}
+
+.nosotros-footer {
+  padding-top: 4rem;
+}
+
+.submitbtn {
+  margin: 10px;
+  border-radius: 1px;
+  border: solid black 1px;
+  width: 100px;
+  height: 100%;
+}
+
+input {
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .map {
+    display: none;
+  }
+  .pharagraph-contact {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
+    display: none;
+  }
+  .pharagraph-contact {
+    display: none;
+  }
+}

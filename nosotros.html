@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <title>Nosotros</title>
+</head>
+
+<body>
+  <!-- Header Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg>
+            class="container-fluid>
+      <a class="navbar-brand" href="index.html">Sensei Villa Serrana</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="villaserrana.html">La Villa</a>
+          </li>
+          <!-- Cabañas (6) -->
+          <li class="nav-item1 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Cabañas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="cabañas.html">Sensei</a></li>
+              <li><a class="dropdown-item" href="cabañas.html">Serena</a></li>
+              <li>
+              <li><a class="dropdown-item" href="cabañas.html">Mandala</a></li>
+              <li><a class="dropdown-item" href="cabañas.html">Mística</a></li>
+              <li>
+              <li><a class="dropdown-item" href="cabañas.html">Dalai</a></li>
+              <li><a class="dropdown-item" href="cabañas.html">Mantra</a></li>
+              <li>
+
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Fin Header Navbar-->
+  <h2 class="h2nos">Reserva con Nosotros!</h2>
+  <div class="box">
+    <!-- <div>
+      <p>Las cabañas disponibles son</p>
+      <div id="cabanasList"></div>
+    </div> -->
+    <div>
+  <p id="piscinasList"></p>
+</div>
+    <div>
+      <input id="dayType" placeholder="Tipo de día" type="text">
+    <input id="dayQuantity" placeholder="Cantidad de noches" type="number">
+    <button id="submitbtn" class="submitbtn" onclick="alojamientoElegido()">Enviar</button>
+    </div> 
+    
+    <div>
+      <p id="inputResponse"></p>
+    </div>
+  </div >
+ 
+<script src="main.js"></script>
+  <footer>
+    <!-- Mapa -->
+    <div class="d-flex justify-content-center">
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.8593998841425!2d-54.99821468477771!3d-34.328599880531634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x950acf879348790f%3A0x5d5661430e53d916!2sSensei%20Villa%20Serrana!5e0!3m2!1ses-419!2suy!4v1652215869030!5m2!1ses-419!2suy"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <p id="contact" class="pharagraph-contact">Escríbenos a senseivillaserrana@gmail.com o al 098833710 / 094427611
+    </p>
+    <!-- Logos redes sociales -->
+    <div class="logo-container d-flex justify-content-between">
+      <a href="https://www.facebook.com/senseivillaserrana">
+        <img class="logo-redes" src="multimedia/images/logos/facebook-logo.png" alt="logo-facebook"></a>
+      <a href="https://www.instagram.com/sensei_villa.serrana/">
+        <img class="logo-redes logoinst" src="multimedia/images/logos/instagram-logo.png" alt="logo-instagram"></a>
+      <a href="https://mail.google.com//">
+        <img class="logo-redes" src="multimedia/images/logos/mail-logo.png" alt="logo-mail"></a>
+    </div>
+  </footer>
+  <!-- JS -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>
