@@ -1,42 +1,46 @@
 // FETCH
-fetch("data.json")
-.then((res)=> res.json())
-.then((json)=>{
-  let html = "";
-  json.forEach((nombre) => {
-    html += `<div> <p> Las cabañas disponibles con piscina son ${nombre[i]}, ubicada en ${direccion[i]} </p>
-  </div> `
-    
-  });
-  document.getElementById('piscinasList').innerHTML = html
+function traerCabanas() {
+  fetch('data.json')
+    .then((res) => res.json())
+    .then((json) => {
+      let html = '';
+      json.forEach((item) => {
+        html += `<div> <p> Las cabañas disponibles con piscina son ${nombre[i]}, ubicada en ${direccion[i]} </p>
+  </div> `;
+      });
+      document.getElementById('piscinasList').innerHTML = html;
+    })
+    .catch((e) => {
+      console.log(e);
+    });
 }
 
-class Cabanas {
-  constructor(id, nombre, direccion) {
-    this.id = id;
-    this.nombre = nombre;
-    this.direccion = direccion;
-  }
-}
+// class Cabanas {
+//   constructor(id, nombre, direccion) {
+//     this.id = id;
+//     this.nombre = nombre;
+//     this.direccion = direccion;
+//   }
+// }
 
-// CABAnAS SENSEI -
-const sensei = new Cabanas(0, 'Sensei', 'FICT CMNO. AL PARADOR 0150 PAD 150');
-const serena = new Cabanas(1, 'Serena', 'CMNO CORONILLA 2311');
-const mandala = new Cabanas(2, 'Mandala', 'CMNO CORONILLA 2311');
-const mistica = new Cabanas(3, 'Mistica', 'CMNO BERNASCONI, ING. AGRIM. JUAN.');
-const mantra = new Cabanas(4, 'Mantra', 'CMNO ENVIRA PAD 2269');
-const dalai = new Cabanas(5, 'Dalai', 'CL ARUERA PAD 1300');
+// // CABAnAS SENSEI -
+// const sensei = new Cabanas(0, 'Sensei', 'FICT CMNO. AL PARADOR 0150 PAD 150');
+// const serena = new Cabanas(1, 'Serena', 'CMNO CORONILLA 2311');
+// const mandala = new Cabanas(2, 'Mandala', 'CMNO CORONILLA 2311');
+// const mistica = new Cabanas(3, 'Mistica', 'CMNO BERNASCONI, ING. AGRIM. JUAN.');
+// const mantra = new Cabanas(4, 'Mantra', 'CMNO ENVIRA PAD 2269');
+// const dalai = new Cabanas(5, 'Dalai', 'CL ARUERA PAD 1300');
+
 let dia;
 let cantidadDeNoches;
 let costoXnoche1;
 let costoXnoche2;
-let arrayJson
+let arrayJson;
 
-const arrayCabanas = [sensei, serena, mandala, mistica, mantra, dalai];
+// const arrayCabanas = [sensei, serena, mandala, mistica, mantra, dalai];
 
 // const arrayCabanasNames = [sensei.nombre, serena.nombre, mandala.nombre, mistica.nombre, mantra.nombre, dalai.nombre];
 localStorage.setItem(arrayCabanas, JSON.stringify(arrayCabanas));
-
 
 function successAlert() {
   Swal.fire({
@@ -55,8 +59,6 @@ function failedAlert() {
     text: 'Las fechas estan ocupadas!',
   });
 }
-
-// promes = new Promes({});
 
 boton = document.getElementById('submitbtn');
 boton.addEventlitener('click', alojamientoElegido);
