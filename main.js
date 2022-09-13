@@ -1,3 +1,16 @@
+// FETCH
+fetch("data.json")
+.then((res)=> res.json())
+.then((json)=>{
+  let html = "";
+  json.forEach((nombre) => {
+    html += `<div> <p> Las cabañas disponibles con piscina son ${nombre[i]}, ubicada en ${direccion[i]} </p>
+  </div> `
+    
+  });
+  document.getElementById('piscinasList').innerHTML = html
+}
+
 class Cabanas {
   constructor(id, nombre, direccion) {
     this.id = id;
@@ -17,22 +30,13 @@ let dia;
 let cantidadDeNoches;
 let costoXnoche1;
 let costoXnoche2;
+let arrayJson
 
 const arrayCabanas = [sensei, serena, mandala, mistica, mantra, dalai];
 
-const arrayCabanasNames = [sensei.nombre, serena.nombre, mandala.nombre, mistica.nombre, mantra.nombre, dalai.nombre];
-
-// Listado de cabanas en html
-// for (let i = 0; i < arrayCabanasNames.length; i++) {
-//   const element = arrayCabanasNames[i];
-//   const option = document.createElement('div');
-//   option.innerHTML = element;
-//   document.getElementById('cabanasList').appendChild(option);
-// }
-
-document.getElementById('piscinasList').innerHTML = 'Las cabanas con piscinas son ' + arrayCabanasNames.join(', ');
-
+// const arrayCabanasNames = [sensei.nombre, serena.nombre, mandala.nombre, mistica.nombre, mantra.nombre, dalai.nombre];
 localStorage.setItem(arrayCabanas, JSON.stringify(arrayCabanas));
+
 
 function successAlert() {
   Swal.fire({

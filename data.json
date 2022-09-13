@@ -1,0 +1,8 @@
+[
+  { "nombre": "sensei", "cabana": 1, "direccion": "FICT CMNO. AL PARADOR 0150 PAD 150" },
+  { "nombre": "serena", "cabana": 2, "direccion": "CMNO CORONILLA 2311" },
+  { "nombre": "mandala", "cabana": 3, "direccion": "CMNO CORONILLA 2311" },
+  { "nombre": "mistica", "cabana": 4, "direccion": "CMNO BERNASCONI, ING. AGRIM. JUAN." },
+  { "nombre": "mantra", "cabana": 5, "direccion": "CMNO ENVIRA PAD 2269" },
+  { "nombre": "dalai", "cabana": 6, "direccion": "CL ARUERA PAD 1300" }
+]
