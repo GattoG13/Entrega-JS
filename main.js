@@ -1,14 +1,17 @@
 carritoPruebaSINjson = JSON.parse(localStorage.getItem('carritoPruebaSINjson')) || [];
-// FETCH
+// FETCH;
 let traerCabanas = () => {
   fetch('./data.json')
     .then((res) => res.json())
-    .then((cabanas) => {
+    .then((mostrarDias) => {
       let html = '';
-      for (let i = 0; cabanas.lenght; i++) {
-        html += `<p> Las cabañas disponibles con piscina son ${cabanas[i].nombre}, ubicada en ${cabanas[i].direccion} </p>`;
-        document.getElementById('piscinasList').innerHTML = html;
+      for (let i = 0; i < mostrarDias.length; i++) {
+        html += `
+        <p>${mostrarDias[i].nombre}"</p>
+      `;
       }
+      document.getElementById('piscinasList').innerHTML = html;
+      console.log(mostrarDias[0].nombre);
     })
     .catch((e) => {
       console.log(e);

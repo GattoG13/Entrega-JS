@@ -240,6 +240,11 @@ h2 {
   width: 100px;
   height: 100%;
 }
+.piscinasList {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50%;
+}
 
 input {
   margin-left: 10px;
